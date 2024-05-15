@@ -21,19 +21,19 @@ const Navbar = ({ className }) => {
         }
       </button>
       <ul className="hidden md:flex flex-row items-center mx-6">
-        <li className="font-medium text-lg text-gray-600 mx-3 hover:text-emerald-400 transition-all duration-300">Home</li>
-        <li className="font-medium text-lg text-gray-600 mx-3 hover:text-emerald-400 transition-all duration-300">About</li>
-        <li className="font-medium text-lg text-gray-600 mx-3 hover:text-emerald-400 transition-all duration-300">Developers</li>
-        <Link to="/signup">
+        <li className="font-medium text-lg text-gray-600 mx-3 hover:text-emerald-400 transition-all duration-300 cursor-pointer">Home</li>
+        <li className="font-medium text-lg text-gray-600 mx-3 hover:text-emerald-400 transition-all duration-300 cursor-pointer">About</li>
+        <li className="font-medium text-lg text-gray-600 mx-3 hover:text-emerald-400 transition-all duration-300 cursor-pointer">Developers</li>
+        <Link to="/signup" className='cursor-pointer'>
         <button className="bg-emerald-400 rounded-lg px-4 py-2 font-medium text-white mx-2">Sign up</button>
         </Link>
       </ul>
     </nav>
     <ul className={`mx-6 flex flex-col md:hidden justify-center items-center ${!open && 'hidden'}`}>
-      <li className="hover:bg-gray-100 py-1.5 rounded-md w-full transition-all duration-300 text-center font-medium text-lg text-gray-600 my-1 hover:text-emerald-400 transition-all duration-300">Home</li>
-        <li className="hover:bg-gray-100 py-1.5 rounded-md w-full transition-all duration-300 text-center font-medium text-lg text-gray-600 my-1 hover:text-emerald-400 transition-all duration-300">About</li>
-        <li className="hover:bg-gray-100 py-1.5 rounded-md w-full transition-all duration-300 text-center font-medium text-lg text-gray-600 my-1 hover:text-emerald-400 transition-all duration-300">Developers</li>
-        <Link to="/signup" className="w-full">
+        <li className="hover:bg-gray-100 py-1.5 rounded-md w-full transition-all duration-300 text-center font-medium text-lg text-gray-600 my-1 hover:text-emerald-400 cursor-pointer">Home</li>
+        <li className="hover:bg-gray-100 py-1.5 rounded-md w-full transition-all duration-300 text-center font-medium text-lg text-gray-600 my-1 hover:text-emerald-400 cursor-pointer">About</li>
+        <li className="hover:bg-gray-100 py-1.5 rounded-md w-full transition-all duration-300 text-center font-medium text-lg text-gray-600 my-1 hover:text-emerald-400 cursor-pointer">Developers</li>
+        <Link to="/signup" className="w-full cursor-pointer">
         <button className="w-full bg-emerald-400 rounded-lg px-4 py-2 font-medium text-white my-2">Sign up</button>
         </Link>
     </ul>
