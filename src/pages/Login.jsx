@@ -47,11 +47,11 @@ const Login = () => {
       <div className="pt-16 md:pt-24 flex flex-col w-full md:w-[50%]">
         <div className="flex flex-col mx-8">
           <label className="font-medium text-gray-700">Email</label>
-          <input onChange={(e) => setEmail(e.target.value)} value={email} className="outline-none py-2 rounded-lg hover:border-emerald-400 mt-2 border-[1.5px] border-gray-200 px-4" type="email" placeholder="john.doe@example.com" />
+          <input onChange={(e) => setEmail(e.target.value)} value={email} className="outline-none py-2 rounded-lg hover:border-emerald-400 mt-2 border-[1.5px] border-gray-200 px-4 focus:border-emerald-500" type="email" placeholder="john.doe@example.com" />
         </div>
         <div className="flex flex-col mx-8 mt-5 relative">
           <label className="font-medium text-gray-700">Password</label>
-          <input onChange={(e) => setPassword(e.target.value)} value={password} className="outline-none py-2 rounded-lg hover:border-emerald-400 mt-2 border-[1.5px] border-gray-200 px-4" type={ show ? 'text' : 'password'} placeholder="Mypassword@123" />
+          <input onChange={(e) => setPassword(e.target.value)} value={password} className="outline-none py-2 rounded-lg hover:border-emerald-400 mt-2 border-[1.5px] border-gray-200 px-4 focus:border-emerald-500" type={ show ? 'text' : 'password'} placeholder="Mypassword@123" />
           {password && (
             <button onClick={() => setShow(!show)} className="absolute top-[2.6rem] right-[0.8rem] text-gray-700">
             { show  ? <Eye /> : <EyeOff /> }
